@@ -1,6 +1,6 @@
 # Agent Toolbelt Framework
 
-A minimal Python framework for registering, managing, and invoking tool functions for LLM (Large Language Model) interactions.
+A minimal Python framework for registering, managing, and invoking tool functions for LLM (Large Language Model) interactions and agentic AI.
 
 ## Features
 - Singleton tool registry for dynamic function registration and lookup
