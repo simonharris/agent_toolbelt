@@ -15,7 +15,7 @@ A minimal Python framework for registering, managing, and invoking tool function
 
 1. Clone the repository:
    ```sh
-   git clone <your-repo-url>
+   git clone https://github.com/simonharris/agent_toolbelt.git
    cd agent_toolbelt
    ```
 2. Create a virtual environment and install dependencies:
