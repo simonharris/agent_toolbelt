@@ -1,0 +1,9 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent_toolbelt"
+version = "0.1.0"
+description = "Agent Toolbelt. No relation to Inspector Gadget."
+authors = [{name="Simon Harding", email="github@pointbeing.net"}]
