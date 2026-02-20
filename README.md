@@ -1,5 +1,7 @@
 # Agent Toolbelt Framework
 
+![Tests](https://github.com/simonharris/agent_toolbelt/actions/workflows/test.yml/badge.svg)
+
 A minimal Python framework for registering, managing, and invoking tool functions for LLM (Large Language Model) interactions and agentic AI.
 
 ## Features
