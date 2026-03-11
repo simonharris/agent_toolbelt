@@ -52,12 +52,25 @@ class ToolRegistry:
 
 
 TOOL_REGISTRY: ToolRegistry = ToolRegistry()
+WEB_TOOL_REGISTRY: ToolRegistry = ToolRegistry()
 
 
 def register_tool(name: str) -> Callable[[T], T]:
     """Decorator to register a function as a tool."""
     def wrapper(fn: T) -> T:
         TOOL_REGISTRY[name] = fn
+        return fn
+    return wrapper
+
+
+def register_webtool(name: str) -> Callable[[T], T]:
+    """Decorator to register a function as both an AI tool and a web-exposed tool.
+    Functions decorated with this will appear in WEB_TOOL_REGISTRY (for REST API
+    adapters) and also in TOOL_REGISTRY (for use with the AI assistant).
+    """
+    def wrapper(fn: T) -> T:
+        TOOL_REGISTRY[name] = fn
+        WEB_TOOL_REGISTRY[name] = fn
         return fn
     return wrapper
 
