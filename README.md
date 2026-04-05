@@ -81,7 +81,7 @@ Run all tests with:
 make test
 ```
 
-## Linting & Code Quality
+## Linting and Code Quality
 - Check PEP8/style issues:
   ```sh
   make lint
